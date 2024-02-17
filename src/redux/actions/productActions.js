@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const getProducts = () => async (dispatch) => {
     try {
-        const { data } = await axios.get(`https://shopeasyserver-omega.vercel.app/products`);
+        const { data } = await axios.get(`https://shopeasyback.onrender.com/products`);
         dispatch({ type: actionTypes.GET_PRODUCTS_SUCCESS, payload: data });
 
     } catch (error) {
