@@ -1,44 +1,4 @@
-// import React, { useState } from 'react';
 
-// const Navbar = ({ data }) => {
-//   const [selectedCategory, setSelectedCategory] = useState('');
-//   const [selectedSubcategory, setSelectedSubcategory] = useState('');
-
-//   return (
-//     <div className="navbar">
-//       <select
-//         value={selectedCategory}
-//         onChange={(e) => {
-//           setSelectedCategory(e.target.value);
-//           setSelectedSubcategory(''); // Reset subcategory when a new category is selected
-//         }}
-//       >
-//         <option value="">Select a Category</option>
-//         {data.map((item, index) => (
-//           <option key={index} value={item.category}>
-//             {item.category}
-//           </option>
-//         ))}
-//       </select>
-
-//       {selectedCategory && (
-//         <select
-//           value={selectedSubcategory}
-//           onChange={(e) => setSelectedSubcategory(e.target.value)}
-//         >
-//           <option value="">Select a Subcategory</option>
-//           {data
-//             .find((item) => item.category === selectedCategory)
-//             .subcategories.map((subcategory, index) => (
-//               <option key={index} value={subcategory}>
-//                 {subcategory}
-//               </option>
-//             ))}
-//         </select>
-//       )}
-//     </div>
-//   );
-// };
 
 // export default Navbar;
 import React from 'react'
